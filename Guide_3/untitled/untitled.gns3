@@ -22,8 +22,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"119\" width=\"209\"><rect fill=\"#ffffff\" fill-opacity=\"1.0\" height=\"119\" stroke=\"#000000\" stroke-width=\"2\" width=\"209\" /></svg>",
-                "x": -525,
-                "y": -130,
+                "x": -515,
+                "y": -686,
                 "z": 0
             },
             {
@@ -31,8 +31,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"127\" width=\"356\"><rect fill=\"#ffffff\" fill-opacity=\"1.0\" height=\"127\" stroke=\"#000000\" stroke-width=\"2\" width=\"356\" /></svg>",
-                "x": -385,
-                "y": -321,
+                "x": -375,
+                "y": -877,
                 "z": 0
             },
             {
@@ -40,8 +40,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"116\" width=\"218\"><rect fill=\"#ffffff\" fill-opacity=\"1.0\" height=\"116\" stroke=\"#000000\" stroke-width=\"2\" width=\"218\" /></svg>",
-                "x": -65,
-                "y": -128,
+                "x": -55,
+                "y": -684,
                 "z": 0
             },
             {
@@ -49,8 +49,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"130\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">DMZ (Server Farm)</text></svg>",
-                "x": -264,
-                "y": -344,
+                "x": -254,
+                "y": -900,
                 "z": 2
             },
             {
@@ -58,8 +58,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"173\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">Inside (Internal Network)</text></svg>",
-                "x": -502,
-                "y": -154,
+                "x": -492,
+                "y": -710,
                 "z": 2
             },
             {
@@ -67,8 +67,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"128\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">Outside (Internet)</text></svg>",
-                "x": -19,
-                "y": -151,
+                "x": -9,
+                "y": -707,
                 "z": 2
             },
             {
@@ -76,8 +76,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"100\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">192.1.1.40/24</text></svg>",
-                "x": -131,
-                "y": -223,
+                "x": -121,
+                "y": -779,
                 "z": 2
             },
             {
@@ -85,8 +85,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"108\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">192.1.1.140/24</text></svg>",
-                "x": -366,
-                "y": -221,
+                "x": -356,
+                "y": -777,
                 "z": 2
             },
             {
@@ -94,8 +94,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"100\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">10.1.1.100/24</text></svg>",
-                "x": -527,
-                "y": -38,
+                "x": -517,
+                "y": -594,
                 "z": 2
             },
             {
@@ -103,8 +103,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"108\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">200.1.1.100/24</text></svg>",
-                "x": 40,
-                "y": -45,
+                "x": 49,
+                "y": -601,
                 "z": 2
             },
             {
@@ -112,8 +112,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"179\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">ip 192.1.1.40/24 192.1.1.1</text></svg>",
-                "x": -26,
-                "y": -322,
+                "x": -16,
+                "y": -878,
                 "z": 2
             },
             {
@@ -121,8 +121,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"187\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">ip 192.1.1.140/24 192.1.1.1</text></svg>",
-                "x": -573,
-                "y": -321,
+                "x": -563,
+                "y": -877,
                 "z": 2
             },
             {
@@ -130,8 +130,8 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"171\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">ip 10.1.1.100/24 10.1.1.1</text></svg>",
-                "x": -701,
-                "y": -131,
+                "x": -691,
+                "y": -687,
                 "z": 2
             },
             {
@@ -139,17 +139,89 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"24\" width=\"187\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">ip 200.1.1.100/24 200.1.1.1</text></svg>",
-                "x": 157,
-                "y": -128,
+                "x": 166,
+                "y": -684,
                 "z": 2
             },
             {
                 "drawing_id": "05cdb6ad-9088-4ad5-b3f3-8a0df685675c",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg height=\"424\" width=\"445\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">configure\nset interfaces ethernet eth0 address 200.1.1.1/24\nset interfaces ethernet eth1 address 192.1.1.1/24\nset interfaces ethernet eth2 address 10.1.1.1/24\ncommit\nsave\nexit\n\nconfigure\nset nat source rule 100 outbound-interface eth0\nset nat source rule 100 source address 10.1.1.0/24\nset nat source rule 100 translation address 192.1.0.1-192.1.0.10\ncommit\nsave\nexit\n\nconfigure\nset zone-policy zone INSIDE description \"Inside (Internal Network)\"\nset zone-policy zone INSIDE interface eth2\nset zone-policy zone DMZ description \"DMZ (Server Farm)\"\nset zone-policy zone DMZ interface eth1\nset zone-policy zone OUTSIDE description \"Outside (Internet)\"\nset zone-policy zone OUTSIDE interface eth0\ncommit\nsave\nexit</text></svg>",
-                "x": -399,
-                "y": 1,
+                "svg": "9ca53f63a3efd975c491ec9386218a9b.svg",
+                "x": -389,
+                "y": -555,
+                "z": 2
+            },
+            {
+                "drawing_id": "f7f3e59f-657f-430b-965d-160f144cdb87",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"24\" width=\"152\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">show nat source rules</text></svg>",
+                "x": -542,
+                "y": -314,
+                "z": 2
+            },
+            {
+                "drawing_id": "07c4bbef-566d-49be-b4a4-57bc48c91bde",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"24\" width=\"112\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">show interfaces</text></svg>",
+                "x": -502,
+                "y": -444,
+                "z": 2
+            },
+            {
+                "drawing_id": "458c0932-5bb1-4557-a2f2-c357f4ae72c2",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"40\" width=\"120\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">show zone-policy\nshow firewall</text></svg>",
+                "x": -509,
+                "y": -137,
+                "z": 2
+            },
+            {
+                "drawing_id": "48c569e7-2154-4da4-8f79-db582bb516fa",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"40\" width=\"120\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">show zone-policy\nshow firewall</text></svg>",
+                "x": -510,
+                "y": 102,
+                "z": 2
+            },
+            {
+                "drawing_id": "cfb7c22e-c52b-4d04-9f66-1416f38757ac",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"40\" width=\"120\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">show zone-policy\nshow firewall</text></svg>",
+                "x": -512,
+                "y": 294,
+                "z": 2
+            },
+            {
+                "drawing_id": "ca6c5802-5426-4fe9-9ded-3d397857dc60",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"40\" width=\"120\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">show zone-policy\nshow firewall</text></svg>",
+                "x": -510,
+                "y": 550,
+                "z": 2
+            },
+            {
+                "drawing_id": "2bcc47f9-9cde-4b7f-8158-bc44f894a8ba",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"40\" width=\"120\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">show zone-policy\nshow firewall</text></svg>",
+                "x": -512,
+                "y": 712,
+                "z": 2
+            },
+            {
+                "drawing_id": "ab1d0bc8-37a4-43a0-9b19-87defe92014b",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"40\" width=\"153\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">sudo iptables -L\nsudo iptables -L -t nat</text></svg>",
+                "x": -545,
+                "y": 760,
                 "z": 2
             }
         ],
@@ -405,8 +477,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": -509,
-                "y": -99,
+                "x": -499,
+                "y": -655,
                 "z": 1
             },
             {
@@ -434,8 +506,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": 63,
-                "y": -103,
+                "x": 72,
+                "y": -659,
                 "z": 1
             },
             {
@@ -463,8 +535,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": -112,
-                "y": -284,
+                "x": -102,
+                "y": -840,
                 "z": 1
             },
             {
@@ -543,8 +615,8 @@
                 "symbol": ":/symbols/ethernet_switch.svg",
                 "template_id": "1966b864-93e7-32d5-965f-001384eec461",
                 "width": 72,
-                "x": -397,
-                "y": -85,
+                "x": -387,
+                "y": -641,
                 "z": 1
             },
             {
@@ -623,8 +695,8 @@
                 "symbol": ":/symbols/ethernet_switch.svg",
                 "template_id": "1966b864-93e7-32d5-965f-001384eec461",
                 "width": 72,
-                "x": -229,
-                "y": -269,
+                "x": -219,
+                "y": -825,
                 "z": 1
             },
             {
@@ -703,8 +775,8 @@
                 "symbol": ":/symbols/ethernet_switch.svg",
                 "template_id": "1966b864-93e7-32d5-965f-001384eec461",
                 "width": 72,
-                "x": -50,
-                "y": -87,
+                "x": -40,
+                "y": -643,
                 "z": 1
             },
             {
@@ -732,8 +804,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": -348,
-                "y": -282,
+                "x": -338,
+                "y": -838,
                 "z": 1
             },
             {
@@ -771,8 +843,8 @@
                 "symbol": ":/symbols/vbox_guest.svg",
                 "template_id": "ec464b72-04ee-4342-bdf4-e0774a079b52",
                 "width": 65,
-                "x": -224,
-                "y": -100,
+                "x": -214,
+                "y": -656,
                 "z": 1
             }
         ]
@@ -780,5 +852,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.38",
-    "zoom": 100
+    "zoom": 50
 }
