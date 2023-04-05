@@ -13,13 +13,12 @@ set interfaces ethernet eth2 address 100.2.2.30/24
 set interfaces ethernet eth3 address 100.1.1.40/24
 
 # Static Routes
-set protocols static route 10.2.2.10/24 next-hop 10.3.3.40
-set protocols static route 10.2.2.10/24 next-hop 10.4.4.30
+set protocols static route 10.2.2.0/24 next-hop 10.3.3.40
+set protocols static route 10.2.2.0/24 next-hop 10.4.4.30
 set protocols static route 0.0.0.0/24 next-hop 200.4.4.30
 set protocols static route 0.0.0.0/24 next-hop 200.3.3.40
 
 # nat/pat
-configure  
 set nat source rule 10 outbound-interface eth0
 set nat source rule 10 source address 10.0.0.0/8  
 set nat source rule 10 translation address 192.1.0.1-192.1.0.10

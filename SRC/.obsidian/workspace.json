@@ -4,22 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "802edf42f4fc4dbc",
+        "id": "7bed8edd988b4d0b",
         "type": "tabs",
         "children": [
           {
-            "id": "8b067f432af663d1",
+            "id": "97593fd8cd762aac",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Project 1/Part 1/Topology.canvas",
-                "viewState": {
-                  "x": 678.5510329742615,
-                  "y": 144.7026166430948,
-                  "zoom": -0.6666666666666665
-                }
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -72,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a503d5952bbd34c0",
@@ -89,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Project 1/Part 1/Topology.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Project 1/Part 1/Topology.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Project 1/Part 1/Topology.canvas"
-              }
+              "state": {}
             }
           }
         ]
@@ -150,28 +138,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8b067f432af663d1",
+  "active": "97593fd8cd762aac",
   "lastOpenFiles": [
-    "Project 1/Part 1/LB1A.md",
-    "Project 1/Part 1/LB1B.md",
-    "Project 1/Part 1/LB2A.md",
+    "Project 1/Part 1/Topology.md",
+    "Project 1/Part 1/PC1.md",
+    "Project 1/Part 1/PC2.md",
+    "Project 1/Part 1/RP1.md",
+    "Project 1/Part 1/R2.md",
+    "Project 1/Part 1/R1.md",
     "Project 1/Part 1/LB2B.md",
+    "Project 1/Part 1/LB2A.md",
+    "Project 1/Part 1/LB1B.md",
+    "Project 1/Part 1/LB1A.md",
     "Project 1/Part 1/FW2.md",
     "Project 1/Part 1/FW1.md",
-    "Project 1/Part 1/PC2.md",
+    "Project 1/Part 1/Topology.canvas",
     "Project 1/Part 1/RP2.md",
-    "Project 1/Part 1/RP1.md",
-    "Project 1/Part 1/PC1.md",
-    "Project 1/Part 1/Topology.md",
     "Project 1/Part 1/Images/topology.png",
     "Project 1/Part 1/Images/router.png",
     "Project 1/Part 1/Images/repeater.png",
     "Project 1/Part 1/Images/pc.png",
     "Project 1/Part 1/Images/load_balancer.png",
     "Project 1/Part 1/Images/Pasted image 20230403133256.png",
-    "Project 1/Part 1/R1.md",
-    "Project 1/Part 1/R2.md",
-    "Project 1/Part 1/Topology.canvas",
     "Project 1/Part 1",
     "nerd_sniping-646633768.png",
     "repeater_icon-1762748111 1.png",
