@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7bed8edd988b4d0b",
+        "id": "04f401be116090d2",
         "type": "tabs",
         "children": [
           {
-            "id": "97593fd8cd762aac",
+            "id": "7f6c29ce31131b99",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,23 +138,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "97593fd8cd762aac",
+  "active": "7f6c29ce31131b99",
   "lastOpenFiles": [
     "Project 1/Part 1/Topology.md",
-    "Project 1/Part 1/PC1.md",
-    "Project 1/Part 1/PC2.md",
-    "Project 1/Part 1/RP1.md",
-    "Project 1/Part 1/R2.md",
-    "Project 1/Part 1/R1.md",
+    "Project 1/Part 1/Full Configs.md",
+    "Project 1/Part 1/FW2.md",
+    "Project 1/Part 1/FW1.md",
     "Project 1/Part 1/LB2B.md",
     "Project 1/Part 1/LB2A.md",
     "Project 1/Part 1/LB1B.md",
     "Project 1/Part 1/LB1A.md",
-    "Project 1/Part 1/FW2.md",
-    "Project 1/Part 1/FW1.md",
+    "Project 1/Part 1/R2.md",
+    "Project 1/Part 1/PC2.md",
+    "Project 1/Part 1/R1.md",
+    "Project 1/Part 1/PC1.md",
     "Project 1/Part 1/Topology.canvas",
-    "Project 1/Part 1/RP2.md",
     "Project 1/Part 1/Images/topology.png",
+    "Project 1/Part 1/Images/topology.png",
+    "Project 1/Part 1/RP1.md",
+    "Project 1/Part 1/RP2.md",
     "Project 1/Part 1/Images/router.png",
     "Project 1/Part 1/Images/repeater.png",
     "Project 1/Part 1/Images/pc.png",
@@ -164,7 +166,6 @@
     "nerd_sniping-646633768.png",
     "repeater_icon-1762748111 1.png",
     "router-clipart-6-4000214610 1.png",
-    "Project 1/Part 1/Images/firewall.png",
     "Project 1/Part 1/Images",
     "Project 1"
   ]
