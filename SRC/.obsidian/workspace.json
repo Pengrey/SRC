@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d798a0170c9ac944",
+        "id": "f3f540668581cdb2",
         "type": "tabs",
         "children": [
           {
-            "id": "45f43661a62d0373",
+            "id": "a1fbb370739c19fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project 1/Part 1/Full Configs.md",
+                "file": "Project 1/Part 1/Questions.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Project 1/Part 1/Full Configs.md",
+                "file": "Project 1/Part 1/Questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Project 1/Part 1/Full Configs.md",
+                "file": "Project 1/Part 1/Questions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Project 1/Part 1/Full Configs.md"
+                "file": "Project 1/Part 1/Questions.md"
               }
             }
           }
@@ -146,25 +146,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "45f43661a62d0373",
+  "active": "a1fbb370739c19fe",
   "lastOpenFiles": [
-    "Project 1/Part 1/FW2.md",
-    "Project 1/Part 1/FW1.md",
     "Project 1/Part 1/Full Configs.md",
-    "Project 1/Part 1/LB2B.md",
-    "Project 1/Part 1/LB2A.md",
-    "Project 1/Part 1/LB1B.md",
-    "Project 1/Part 1/LB1A.md",
-    "Project 1/Part 1/R2.md",
-    "Project 1/Part 1/R1.md",
-    "Project 1/Part 1/PC2.md",
-    "Project 1/Part 1/PC1.md",
+    "Project 1/Part 1/Questions.md",
+    "Project 1/Part 1/Network/Topology.canvas",
+    "Project 1/Part 1/Network/FW1.md",
+    "Project 1/Part 1/Network/PC1.md",
+    "Project 1/Part 1/Network",
     "Project 1/Part 1/Images/topology.png",
-    "Project 1/Part 1/Topology.md",
+    "Project 1/Part 1/Network/Topology.md",
+    "Project 1/Part 1/Network/FW2.md",
+    "Project 1/Part 1/Network/LB2B.md",
+    "Project 1/Part 1/Network/LB2A.md",
+    "Project 1/Part 1/Network/LB1B.md",
+    "Project 1/Part 1/Network/LB1A.md",
+    "Project 1/Part 1/Network/R2.md",
+    "Project 1/Part 1/Network/R1.md",
+    "Project 1/Part 1/Network/PC2.md",
     "Project 1/Part 1/VyOS_p_Entregar.md",
-    "Project 1/Part 1/Topology.canvas",
-    "Project 1/Part 1/RP2.md",
-    "Project 1/Part 1/RP1.md",
+    "Project 1/Part 1/Network/RP2.md",
+    "Project 1/Part 1/Network/RP1.md",
     "Project 1/Part 1/Images/router.png",
     "Project 1/Part 1/Images/repeater.png",
     "Project 1/Part 1/Images/pc.png",

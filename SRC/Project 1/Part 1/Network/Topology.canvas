@@ -1,19 +1,19 @@
 {
 	"nodes":[
-		{"id":"55230e392f7522e5","x":-480,"y":-120,"width":720,"height":280,"color":"3","type":"group","label":"Inside (Internal Network)"},
-		{"id":"8e509e081a63f4f3","x":1360,"y":-120,"width":720,"height":280,"color":"6","type":"group","label":"Outside (Internet)"},
-		{"id":"df0d7ca4b7d718d9","x":360,"y":-340,"width":160,"height":178,"type":"file","file":"Project 1/Part 1/LB1A.md"},
-		{"id":"08ab5b75ff993b87","x":360,"y":240,"width":160,"height":180,"type":"file","file":"Project 1/Part 1/LB1B.md"},
-		{"id":"a6a449599845fd5b","x":720,"y":-340,"width":160,"height":178,"type":"file","file":"Project 1/Part 1/FW1.md"},
-		{"id":"22e97509b847d2e2","x":720,"y":240,"width":160,"height":180,"type":"file","file":"Project 1/Part 1/FW2.md"},
-		{"id":"ae349c3ac3de365a","x":1080,"y":240,"width":160,"height":180,"type":"file","file":"Project 1/Part 1/LB2B.md"},
-		{"id":"8ae41ae23f21fda7","x":1080,"y":-340,"width":160,"height":178,"type":"file","file":"Project 1/Part 1/LB2A.md"},
-		{"id":"8508c3b7debedcdd","x":1400,"y":-38,"width":129,"height":138,"type":"file","file":"Project 1/Part 1/RP2.md"},
-		{"id":"3c3a026c225a61e7","x":1649,"y":-38,"width":129,"height":138,"type":"file","file":"Project 1/Part 1/R2.md"},
-		{"id":"bb262087789de038","x":1909,"y":-38,"width":129,"height":138,"type":"file","file":"Project 1/Part 1/PC2.md"},
-		{"type":"file","file":"Project 1/Part 1/PC1.md","id":"c656a3b619bacd59","x":-440,"y":-38,"width":129,"height":138},
-		{"type":"file","file":"Project 1/Part 1/R1.md","id":"695fc74d0d7edf07","x":-191,"y":-38,"width":129,"height":138},
-		{"id":"299afcfc356cc37b","x":69,"y":-38,"width":129,"height":138,"type":"file","file":"Project 1/Part 1/RP1.md"}
+		{"type":"group","id":"55230e392f7522e5","x":-480,"y":-120,"width":720,"height":280,"color":"3","label":"Inside (Internal Network)"},
+		{"type":"group","id":"8e509e081a63f4f3","x":1360,"y":-120,"width":720,"height":280,"color":"6","label":"Outside (Internet)"},
+		{"type":"file","file":"Project 1/Part 1/Network/LB1A.md","id":"df0d7ca4b7d718d9","x":360,"y":-340,"width":160,"height":178},
+		{"type":"file","file":"Project 1/Part 1/Network/LB1B.md","id":"08ab5b75ff993b87","x":360,"y":240,"width":160,"height":180},
+		{"type":"file","file":"Project 1/Part 1/Network/FW1.md","id":"a6a449599845fd5b","x":720,"y":-340,"width":160,"height":178},
+		{"type":"file","file":"Project 1/Part 1/Network/FW2.md","id":"22e97509b847d2e2","x":720,"y":240,"width":160,"height":180},
+		{"type":"file","file":"Project 1/Part 1/Network/LB2B.md","id":"ae349c3ac3de365a","x":1080,"y":240,"width":160,"height":180},
+		{"type":"file","file":"Project 1/Part 1/Network/LB2A.md","id":"8ae41ae23f21fda7","x":1080,"y":-340,"width":160,"height":178},
+		{"type":"file","file":"Project 1/Part 1/Network/PC1.md","id":"c656a3b619bacd59","x":-440,"y":-38,"width":129,"height":138},
+		{"type":"file","file":"Project 1/Part 1/Network/R1.md","id":"695fc74d0d7edf07","x":-191,"y":-38,"width":129,"height":138},
+		{"type":"file","file":"Project 1/Part 1/Network/RP1.md","id":"299afcfc356cc37b","x":69,"y":-38,"width":129,"height":138},
+		{"type":"file","file":"Project 1/Part 1/Network/RP2.md","id":"8508c3b7debedcdd","x":1400,"y":-38,"width":129,"height":138},
+		{"type":"file","file":"Project 1/Part 1/Network/R2.md","id":"3c3a026c225a61e7","x":1649,"y":-38,"width":129,"height":138},
+		{"type":"file","file":"Project 1/Part 1/Network/PC2.md","id":"bb262087789de038","x":1909,"y":-38,"width":129,"height":138}
 	],
 	"edges":[
 		{"id":"80990752fb75d803","fromNode":"c656a3b619bacd59","fromSide":"right","toNode":"695fc74d0d7edf07","toSide":"left","toEnd":"none"},

@@ -1,0 +1,22 @@
+Apr 06 16:53:29.161 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 06 16:53:29.161 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50716.
+Apr 06 16:53:29.661 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 06 16:53:29.661 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\rodri\Desktop\Pain\SRC\Project_1\Part_1\Project_1\project-files\dynamips 
+Apr 06 16:53:29.661 GENERAL: working_dir=C:\Users\rodri\Desktop\Pain\SRC\Project_1\Part_1\Project_1\project-files\dynamips
+Apr 06 16:53:29.661 HYPERVISOR: exec_cmd: ethsw create Switch2 
+Apr 06 16:53:32.295 HYPERVISOR: exec_cmd: nio create_udp udp-e564b086-b9ab-4f5a-9ffb-4572e153134f 10024 127.0.0.1 10025 
+Apr 06 16:53:32.296 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-e564b086-b9ab-4f5a-9ffb-4572e153134f 
+Apr 06 16:53:32.326 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-e564b086-b9ab-4f5a-9ffb-4572e153134f 1 
+Apr 06 16:53:32.406 HYPERVISOR: exec_cmd: nio create_udp udp-d0d50d01-e45e-473f-9bd0-fb94e9cc24e3 10026 127.0.0.1 10027 
+Apr 06 16:53:32.406 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-d0d50d01-e45e-473f-9bd0-fb94e9cc24e3 
+Apr 06 16:53:32.418 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d0d50d01-e45e-473f-9bd0-fb94e9cc24e3 1 
+Apr 06 16:53:33.234 HYPERVISOR: exec_cmd: nio create_udp udp-fb2959e4-e40e-4aee-b218-ab187f289a6a 10041 127.0.0.1 10040 
+Apr 06 16:53:33.234 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-fb2959e4-e40e-4aee-b218-ab187f289a6a 
+Apr 06 16:53:33.237 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-fb2959e4-e40e-4aee-b218-ab187f289a6a 1 
+Apr 06 16:54:56.285 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-fb2959e4-e40e-4aee-b218-ab187f289a6a 1 
+Apr 06 16:54:56.400 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-e564b086-b9ab-4f5a-9ffb-4572e153134f 1 
+Apr 06 16:54:56.485 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d0d50d01-e45e-473f-9bd0-fb94e9cc24e3 1 
+Apr 06 18:55:43.156 HYPERVISOR: exec_cmd: ethsw delete Switch2 
+Apr 06 18:55:43.238 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 06 18:55:43.547 HYPERVISOR: Stopped.
+Apr 06 18:55:43.547 GENERAL: reset done.

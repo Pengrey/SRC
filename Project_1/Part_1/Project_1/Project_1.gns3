@@ -621,8 +621,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": -1014,
-                "y": -154,
+                "x": -717,
+                "y": -37,
                 "z": 1
             },
             {
@@ -650,8 +650,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": 320,
-                "y": -153,
+                "x": 616,
+                "y": -36,
                 "z": 1
             },
             {
@@ -689,8 +689,8 @@
                 "symbol": ":/symbols/vbox_guest.svg",
                 "template_id": "31c4b287-27fb-4fde-91ca-0fbbd88ebb4d",
                 "width": 65,
-                "x": -398,
-                "y": -367,
+                "x": -101,
+                "y": -250,
                 "z": 1
             },
             {
@@ -728,8 +728,8 @@
                 "symbol": ":/symbols/vbox_guest.svg",
                 "template_id": "8127dc4f-1792-4e3d-beea-b45e3c60559e",
                 "width": 65,
-                "x": -391,
-                "y": 45,
+                "x": -94,
+                "y": 161,
                 "z": 1
             },
             {
@@ -767,8 +767,8 @@
                 "symbol": ":/symbols/vbox_guest.svg",
                 "template_id": "bf3d98e3-3d0a-4afc-b0f8-6047941c3d81",
                 "width": 65,
-                "x": -600,
-                "y": 47,
+                "x": -303,
+                "y": 163,
                 "z": 1
             },
             {
@@ -806,8 +806,8 @@
                 "symbol": ":/symbols/vbox_guest.svg",
                 "template_id": "8b74ed6c-a0bd-44d4-9fdd-6b93b0c659b9",
                 "width": 65,
-                "x": -163,
-                "y": -372,
+                "x": 133,
+                "y": -255,
                 "z": 1
             },
             {
@@ -845,8 +845,8 @@
                 "symbol": ":/symbols/vbox_guest.svg",
                 "template_id": "d4166913-cb9a-4caa-b6bd-c20006538999",
                 "width": 65,
-                "x": -162,
-                "y": 47,
+                "x": 134,
+                "y": 163,
                 "z": 1
             },
             {
@@ -884,8 +884,8 @@
                 "symbol": ":/symbols/vbox_guest.svg",
                 "template_id": "df0c0ab4-3666-4525-867a-067449d2a75a",
                 "width": 65,
-                "x": -600,
-                "y": -370,
+                "x": -303,
+                "y": -253,
                 "z": 1
             },
             {
@@ -964,8 +964,8 @@
                 "symbol": ":/symbols/ethernet_switch.svg",
                 "template_id": "1966b864-93e7-32d5-965f-001384eec461",
                 "width": 72,
-                "x": -741,
-                "y": -147,
+                "x": -444,
+                "y": -30,
                 "z": 1
             },
             {
@@ -1044,13 +1044,13 @@
                 "symbol": ":/symbols/ethernet_switch.svg",
                 "template_id": "1966b864-93e7-32d5-965f-001384eec461",
                 "width": 72,
-                "x": -7,
-                "y": -135,
+                "x": 289,
+                "y": -18,
                 "z": 1
             },
             {
                 "compute_id": "local",
-                "console": 5000,
+                "console": 5002,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -1101,13 +1101,13 @@
                 "symbol": ":/symbols/router.svg",
                 "template_id": "b715d0e2-6776-4f39-b41e-eb694bbf9b2a",
                 "width": 66,
-                "x": -871,
-                "y": -148,
+                "x": -574,
+                "y": -31,
                 "z": 1
             },
             {
                 "compute_id": "local",
-                "console": 5001,
+                "console": 5003,
                 "console_auto_start": false,
                 "console_type": "telnet",
                 "custom_adapters": [],
@@ -1158,8 +1158,8 @@
                 "symbol": ":/symbols/router.svg",
                 "template_id": "b715d0e2-6776-4f39-b41e-eb694bbf9b2a",
                 "width": 66,
-                "x": 154,
-                "y": -145,
+                "x": 450,
+                "y": -28,
                 "z": 1
             }
         ]
