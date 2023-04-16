@@ -1,15 +1,17 @@
+Authors: Camila Fonseca (nmec: 97880), Rodrigo Lima (nmec: 98457)
 # Introduction
-This report is focused on the design and implementation of a simple network configuration, which employs load-balancing with redundancy and state synchronization, as well as policy definition and integrated deployment. The aim is to create a resilient, high-performance network infrastructure that ensures availability, security, and scalability.
+This report details the design and implementation of a simple network configuration, while employing load-balancing with redundancy and state synchronization, as well as policy definition and integrated deployment. The aim is to create a resilient, high-performance network infrastructure that ensures availability, security, and scalability.
 
-# Load-Balancing Scenario
+# Load-Balancing Scenario [Exercise 9]
+
 The network configuration follows the following network diagram:
 ![[Project 1/Part 1/Images/Topology.png]]
 
-The network is configured with redundancy and state synchronization, this can be seen in the following configurations:
+The network is configured with redundancy and state synchronization, which can be seen in the following configurations:
 
 ## Load Balancer Template Configuration
 ### VRRP (Virtual Router Redundancy Protocol)
-This configuration enables redundancy. It allows multiple devices to work together as a group and share a virtual IP address
+This configuration enables redundancy, allowing multiple devices to work together as a group and share a virtual IP address
 ```sql
 # vrrp
 set high-availability vrrp group LB1Cluster vrid 10  
@@ -20,7 +22,7 @@ set high-availability vrrp group LB1Cluster rfc3768-compatibility
 
 ```
 
-This configuration enables state synchronization between the load balancers, this ensures a seamless failover in case of device failure.
+This configuration enables state synchronization between the load balancers, which ensures a seamless failover in case of device failure.
 ```sql
 # conntrack sync
 set service conntrack-sync accept-protocol 'tcp,udp,icmp'  
@@ -30,7 +32,7 @@ set service conntrack-sync mcast-group 225.0.0.50
 set service conntrack-sync disable-external-cache
 ```
 
-This configuration enables load balancing, it is designed to distribute traffic across multiple devices.
+This configuration enables load balancing, in order to distribute traffic across multiple devices.
 ```sql
 # load balancing
 set load-balancing wan interface-health eth3 nexthop 10.1.3.13 
@@ -43,15 +45,15 @@ set load-balancing wan disable-source-nat
 ```
 
 >[!NOTE]
->In this scenario, the firewalls are not directly involved in load balancing or VRRP failover. The load balancing and failover is managed by the two load balancers LB1A and LB1B, which are configured to synchronize the connection state information between them using the conntrack-sync mechanism.
+>In this scenario, the firewalls are not directly involved in load balancing or VRRP failover. The load balancing and failover are managed by the two load balancers LB1A and LB1B, which are configured to synchronize the connection state information between them using the conntrack-sync mechanism.
 >
 >Since both LB1A and LB1B are in the same VRRP group and are members of the same sync-group, they are aware of the state of connections handled by each other. When a failover occurs, the new active load balancer can continue handling the existing connections without dropping them.
 >
->The firewalls, on the other hand, are not involved in connection tracking or load balancing, and they do not need to synchronize their state with the load balancers. They simply need to have their default gateway set to the IP address of the active load balancer in the VRRP cluster so that they can forward traffic to the load balancer.
+>The firewalls, on the other hand, are not involved in connection tracking or load balancing, and they do not need to synchronize their state with the load balancers. They simply need to have their default gateway set to the IP address of the active load balancer in the VRRP cluster so that they can forward the non-dropped traffic to the next load balancer.
 
 >[!NOTE] 
 >
->In this project sticky connections are enabled, which means that once a client is connected to a specific backend server, subsequent requests from that client will be sent to the same server. Other load balancing algorithm may also allow the nonexistence of load-balancers synchronization, these ones are the following:
+>In this project sticky connections are enabled, which means that once a client is connected to a specific device behind the load-balancer, subsequent requests from that client will be sent to the same device. Other load balancing algorithms that may allow the nonexistence of load-balancers synchronization are:
 >1.  Round Robin: This algorithm distributes incoming requests sequentially among backend servers in a circular manner. As there is no need to maintain any state, there is no need for load-balancer synchronization.
 >    
 >2.  Least Connections: This algorithm directs incoming requests to the backend server with the fewest active connections. In scenarios where the servers have similar capacity, this algorithm can work effectively without load-balancer synchronization.
@@ -63,11 +65,13 @@ set load-balancing wan disable-source-nat
 >
 >One such technique is to distribute the traffic across multiple servers or devices using load balancing, so that no single device becomes overwhelmed. However, if the load balancers are synchronizing their device/connection states, this can create a problem during a DDoS attack.
 >
->If the load balancers are synchronized, then when one load balancer detects a flood of traffic, it will direct traffic away from the affected device to another device. However, since all the load balancers are synchronized, they will all direct traffic away from the affected device, leaving only a single device to handle all the traffic. This can cause the overwhelmed device to crash or become unusable, defeating the purpose of load balancing.
+>If the load balancers are synchronized, then when one load balancer detects a flood of traffic, it will direct traffic away from the affected device to another device. However, since all the load balancers are synchronized, they will direct all traffic away from the affected device, leaving only a single device to handle all the traffic. This can cause the overwhelmed device to crash or become unusable, defeating the purpose of load balancing.
 >
 >Therefore, it is often better to have independent load balancers that do not synchronize their device/connection states during a DDoS attack. This allows each load balancer to make its own decisions about where to direct traffic, based on its own view of the network and the devices that it is managing. This approach helps to ensure that the network remains available and functional during a DDoS attack.
 
-# Policies Definition and Integrated Deployment
+
+
+# Policies Definition and Integrated Deployment [Exercise 10]
 The network configuration follows the following network diagram:
 ![[Project 1/Part 2/Images/Topology.png]]
 
@@ -75,7 +79,7 @@ The network configuration follows the following network diagram:
 ## Firewall Template Configuration
 ### Control policies
 #### Zone definition
-The project was devided into three distinct zones: DMZ, Inside (Internal Network) and Outside (Internet), the zone polocy configuration is the following:
+The project was divided into three distinct zones: DMZ, Inside (Internal Network) and Outside (Internet), using the following zone policy configuration:
 ```sql
 # Set Zone Policies
 set zone-policy zone INSIDE description "Inside (Internal Network)"
@@ -89,7 +93,7 @@ set zone-policy zone OUTSIDE interface eth1
 ```
 
 #### ACL definition
-To better limit the access through the network, some ACLs where made:
+To limit the access through the network, the following ACLs were created:
 ```sql
 # Access Control Lists
 set firewall name RESTRICTED default-action drop
@@ -97,7 +101,7 @@ set firewall name ESTABLISHED default-action drop
 ```
 
 ##### Established connetions
-This rule is used to accept established and related connections.
+This rule is used to accept established and related connections, which have been previously initiated.
 ```sql
 # Accept estabelished
 set firewall name ESTABLISHED rule 1 description "Accept Established-Related Connections"
@@ -107,7 +111,7 @@ set firewall name ESTABLISHED rule 1 state related enable
 ```
 
 ##### Restricted
-To better restrict access through the network only some ports and protocols where allowed through it.
+To better restrict access through the network only some ports and protocols were allowed through it.
 ###### HTTP
 ```sql
 # HTTP
@@ -164,7 +168,7 @@ set firewall name RESTRICTED rule 60 destination address 0.0.0.0/0
 ```
 
 ##### ACL Application
-The application of these ACLs where applied as follows:
+The application of these ACLs were applied as follows:
 ```sql
 # Apply ACLs to Zone Policies
 set zone-policy zone DMZ from INSIDE firewall name RESTRICTED
@@ -175,8 +179,14 @@ set zone-policy zone INSIDE from OUTSIDE firewall name ESTABLISHED
 set zone-policy zone INSIDE from DMZ firewall name ESTABLISHED
 ```
 
+As it stands, devices in the DMZ may not initiate connections to either Inside or Outside zones, but can receive connections from either, given they're in an approved protocol/port as detailed in the Restricted ACL. Traffic is allowed to the outside of the DMZ after the connection has been initiated from outside.
+
+Devices in the Inside zone can send and receive Restricted traffic from either DMZ and Outside.
+
+Devices in the Outside zone (Internet) can initiate connections with the DMZ but not with the Inside zone, also under the Restricted ACL. After a connection is established from Inside, traffic may flow Outside -> Inside.
+
 #### Rate Limiting
-To better mitigate possible DDoS attacks a rate-limiting traffic policy to shape the outbound traffic on the ethernet interface eth4 was applied. The rate limit is set to 10 Mbps and was configured as follows:
+To better mitigate possible DDoS attacks, a rate-limiting traffic policy to shape the outbound traffic on the eth4 interface was applied. The rate limit is set to 10 Mbps and was configured as follows:
 ```sql
 # Rate limiting 
 set traffic-policy shaper RATE-LIMIT-10Mbps bandwidth 10mbit 
@@ -186,15 +196,16 @@ set interfaces ethernet eth4 traffic-policy out RATE-LIMIT-10Mbps
 ```
 
 #### Block List
-To better mitigate DDoS attacks, it was also implemented a firewall rule named "RESTRICTED" to block traffic from specific IP addresses that belong to a group called "ddos_blocklist":
+To better mitigate DDoS attacks, it was also implemented a firewall rule named "BLOCKED" to block traffic from specific IP addresses that belong to a group called "ddos_blocklist":
 ```sql
 # BlockList
-set firewall name RESTRICTED rule 70 description "Block IPs"
-set firewall name RESTRICTED rule 70 action drop
-set firewall name RESTRICTED 70 source group address-group ddos_blocklist
+set firewall name BLOCKED rule 70 description "Block IPs"
+set firewall name BLOCKED rule 70 action drop
+set firewall name BLOCKED 70 source group address-group ddos_blocklist
 ```
 
-It is assumed that exists an external monitoring system that will identify the external IP address of the DDoS participants and dynamically provide an updated list. one possible implementation of this is the following script with the help of a file to be imported:
+It is assumed that an external monitoring system exists and will identify the external IP address of the DDoS participants, dynamically providing an updated list.
+One such possible implementation of this is the following bash script, with the help of a file containing said list that should be imported:
 ```bash
 #!/bin/bash
 
@@ -219,7 +230,50 @@ sudo vtysh -c "save"
 sudo vtysh -c "exit"
 ```
 
-## Full configuration
+### Connectivity Demo
+There is full connectivity from PC1 to PC2:
+**PC1->PC2**
+![[Pasted image 20230416192555.png]]
+
+(Captured in between R2 and Switch2)
+![[Pasted image 20230416192808.png]]
+
+There is connectivity from PC1 to PC3, however there is a problem - PC3 has its' gateway set to FW1. 
+When the pings go through FW2, their replies come back through FW1, which drops them, since it is set to drop packets incoming from the DMZ that aren't in previously established connections. This results in roughly half the ICMP requests timing out.
+
+**PC1->PC3**
+![[Pasted image 20230416194546.png]]
+This can be verified by the following Wireshark captures:
+
+*Between LB1A and FW1*
+![[Pasted image 20230416194716.png]]
+(Replies are present.)
+
+*Between LB1A and FW2*
+![[Pasted image 20230416195001.png]]
+(No replies.)
+
+*Between Switch3 and PC3(DMZ)*
+![[Pasted image 20230416195140.png]]
+(All replies are present)
+
+Furthermore, by looking at FW1's firewall statistics we can see it is indeed dropping packets.
+![[Pasted image 20230416195235.png]]
+
+**PC2 -> PC3**
+![[Pasted image 20230416195912.png]]
+Due to the same issue as before, half the ICMP requests get replies.
+
+**PC2->PC1**
+![[Pasted image 20230416200501.png]]
+As intended, a device in the Outside zone cannot initiate connections with one in the Inside zone.
+
+**PC3->PC1 and PC3->PC2**
+![[Pasted image 20230416200525.png]]
+
+In a similar manner, the DMZ PC can't ping devices in either Inside or Outside zones.
+
+## Full configuration (Appendix)
 
 PC1 (Computer)
 ```
@@ -268,7 +322,7 @@ no shut
 
 # Static Routes
 ## Internal
-ip route 0.0.0.0 0.0.0.0 200.1.1.16
+ip route 0.0.0.0 0.0.0.0 200.1.1.15
 
 end
 write
@@ -288,8 +342,13 @@ set interfaces ethernet eth3 address 10.1.3.11/24
 set protocols static route 10.2.2.0/24 next-hop 10.1.1.10
 ## Internet
 set protocols static route 0.0.0.0/0 next-hop 10.1.3.13
+set protocols static route 0.0.0.0/0 next-hop 10.1.2.14
 ## DMZ
-set protocols static route 192.1.1.0/24 next-hop 10.1.1.13
+set protocols static route 192.1.1.0/24 next-hop 10.1.3.13
+set protocols static route 192.1.1.0/24 next-hop 10.1.2.14
+
+
+set protocols static route 192.1.1.0/24 next-hop 10.1.1.13 disable
 
 # vrrp
 set high-availability vrrp group LB1Cluster vrid 10  
@@ -332,9 +391,10 @@ set interfaces ethernet eth3 address 10.1.3.12/24
 set protocols static route 10.2.2.0/24 next-hop 10.1.1.10
 ## Internet
 set protocols static route 0.0.0.0/0 next-hop 10.1.4.13
+set protocols static route 0.0.0.0/0 next-hop 10.1.3.14
 ## DMZ
 set protocols static route 192.1.1.0/24 next-hop 10.1.4.13
-
+set protocols static route 192.1.1.0/24 next-hop 10.1.3.14
 # vrrp
 set high-availability vrrp group LB1Cluster vrid 10  
 set high-availability vrrp group LB1Cluster interface eth1
@@ -376,8 +436,10 @@ set interfaces ethernet eth3 address 200.1.1.16/24
 set protocols static route 0.0.0.0/0 next-hop 200.1.1.10  
 ## Intranet
 set protocols static route 192.1.0.0/28 next-hop 10.2.0.13
+set protocols static route 192.1.0.0/28 next-hop 10.2.3.14
 ## DMZ
 set protocols static route 192.1.1.0/24 next-hop 10.2.0.13
+set protocols static route 192.1.1.0/24 next-hop 10.2.3.14
 
 # vrrp
 set high-availability vrrp group LB2Cluster vrid 10  
@@ -420,9 +482,11 @@ set interfaces ethernet eth3 address 200.1.1.15/24
 ## Internet
 set protocols static route 0.0.0.0/0 next-hop 200.1.1.10
 ## Intranet
+set protocols static route 192.1.0.0/28 next-hop 10.2.4.14
 set protocols static route 192.1.0.0/28 next-hop 10.2.1.13
 ## DMZ
 set protocols static route 192.1.1.0/24 next-hop 10.2.4.14
+set protocols static route 192.1.1.0/24 next-hop 10.2.1.13
 
 # vrrp
 set high-availability vrrp group LB2Cluster vrid 10  
@@ -458,7 +522,7 @@ FW1 (Firewall)
 configure
 set system host-name FW1  
 set interfaces ethernet eth0 address 10.2.0.13/24  
-set interfaces ethernet eth1 address 10.1.2.13/24  
+set interfaces ethernet eth1 address 10.2.1.13/24  
 set interfaces ethernet eth2 address 10.1.4.13/24  
 set interfaces ethernet eth3 address 10.1.3.13/24
 set interfaces ethernet eth4 address 192.1.1.10/24
@@ -687,3 +751,5 @@ sudo vtysh -c "commit"
 sudo vtysh -c "save"
 sudo vtysh -c "exit"
 ```
+
+

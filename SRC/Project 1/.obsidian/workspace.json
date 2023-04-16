@@ -1,19 +1,21 @@
 {
   "main": {
-    "id": "e1f6069a993b8bc0",
+    "id": "bdaca3b891fc5f36",
     "type": "split",
     "children": [
       {
-        "id": "7c21b7e2c1cb9949",
+        "id": "fc845540aab3ab51",
         "type": "tabs",
         "children": [
           {
-            "id": "80a256241a834ee9",
+            "id": "41d9a9a26ddbe879",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Project 1/Report.pdf"
+                "file": "Report.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -23,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "7ff582ec18fff1cc",
+    "id": "ac6135a5e04c1107",
     "type": "split",
     "children": [
       {
-        "id": "54349762a529b575",
+        "id": "113df5db90ca76d7",
         "type": "tabs",
         "children": [
           {
-            "id": "30b632a540cadb93",
+            "id": "e125332fe9e0334b",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -41,7 +43,7 @@
             }
           },
           {
-            "id": "a401517ba934d181",
+            "id": "cd9aa1b9fa4b449c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -56,7 +58,7 @@
             }
           },
           {
-            "id": "c083f9728728a603",
+            "id": "ff150ca5b336893c",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -67,24 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 384.5,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "a503d5952bbd34c0",
+    "id": "0d2c064683a543f6",
     "type": "split",
     "children": [
       {
-        "id": "ef88147543b9a780",
+        "id": "24457d911488a214",
         "type": "tabs",
         "children": [
           {
-            "id": "aefe14624215123b",
+            "id": "b53944622b030d18",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Project 1/Report.pdf",
+                "file": "Report.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,19 +97,19 @@
             }
           },
           {
-            "id": "68adbce9358b9398",
+            "id": "79f4a41d0b92930f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Project 1/Report.pdf",
+                "file": "Report.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "f3019e513d41807c",
+            "id": "d372763df9d38963",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -119,12 +120,12 @@
             }
           },
           {
-            "id": "ff2aa55364a483bb",
+            "id": "9f310f3086d777c8",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Project 1/Report.pdf"
+                "file": "Report.md"
               }
             }
           }
@@ -145,48 +146,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "80a256241a834ee9",
-  "lastOpenFiles": [
-    "Project 1/Report.md",
-    "Project 1/Report.pdf",
-    "Project 1/Part 2/Full_Configs.md",
-    "Project 1/Part 1/Full Configs.md",
-    "Project 1/Part 2/Images/Pasted image 20230416200525.png",
-    "Project 1/Part 2/Images/Pasted image 20230416200501.png",
-    "Project 1/Part 2/Images/Pasted image 20230416200417.png",
-    "Project 1/Part 2/Images/Pasted image 20230416200358.png",
-    "Project 1/Part 2/Images/Pasted image 20230416200142.png",
-    "Project 1/Part 2/Images/Pasted image 20230416200123.png",
-    "Project 1/Part 2/Images/Pasted image 20230416195912.png",
-    "Project 1/Part 2/Images/Pasted image 20230416195235.png",
-    "Project 1/Part 2/Images/Pasted image 20230416195140.png",
-    "Project 1/Part 2/Images/Pasted image 20230416195001.png",
-    "Project 1/Part 2/Images",
-    "Project 1/Part 1/Images",
-    "Project 1/Part 2",
-    "Project 1/Part 1",
-    "Project 1/Guide.pdf",
-    "Project 1",
-    "Project 1.zip",
-    "Project 1/Part 1/Questions.md",
-    "Project 1/Part 2/Full Configs.md",
-    "Project 1/Untitled",
-    "Project 1/Part 2/Questions.md",
-    "Project 1/Part 1/Network/Topology.md",
-    "Project 1/Part 1/Network/Topology.canvas",
-    "Project 1/Part 1/Network/FW1.md",
-    "Project 1/Part 1/Network/PC1.md",
-    "Project 1/Part 1/Network",
-    "Project 1/Part 1/Network/FW2.md",
-    "Project 1/Part 1/Network/LB2B.md",
-    "Project 1/Part 1/Network/LB2A.md",
-    "Project 1/Part 1/Network/LB1B.md",
-    "Project 1/Part 1/Network/LB1A.md",
-    "Project 1/Part 1/Network/R2.md",
-    "Project 1/Part 1/Network/R1.md",
-    "Project 1/Part 1/Network/PC2.md",
-    "Project 1/Part 1/VyOS_p_Entregar.md",
-    "Project 1/Part 1/Network/RP2.md",
-    "Project 1/Part 1/Network/RP1.md"
-  ]
+  "active": "41d9a9a26ddbe879",
+  "lastOpenFiles": []
 }
